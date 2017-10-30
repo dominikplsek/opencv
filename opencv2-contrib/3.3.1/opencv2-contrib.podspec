@@ -26,13 +26,17 @@ By downloading, copying, installing or using the software you agree to this lice
 
   s.preserve_paths = "opencv2.framework"
   
+  s.vendored_frameworks = 'opencv2.framework'
+
   s.header_dir = "opencv2"
   
   s.header_mappings_dir = "opencv2.framework/Versions/A/Headers/"
+  
+  s.dependency "libwebp"
 
   s.libraries = "stdc++"
 
-  s.frameworks = "Accelerate", "AppKit", "AVFoundation", "CoreMedia", "CoreVideo", "Foundation", "OpenCL"
+  s.frameworks = "Accelerate", "AppKit", "AVFoundation", "CoreMedia", "CoreMedia" ,"CoreVideo", "Foundation", "QuartzCore", "OpenCL"
   
   s.requires_arc = false
 
