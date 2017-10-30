@@ -19,20 +19,20 @@ By downloading, copying, installing or using the software you agree to this lice
   s.platform     = :osx, "10.9"
 
   s.source       = {  :http => 'https://github.com/dominikplsek/opencv/releases/download/3.3.1/opencv2.framework.zip' }
+  
+  s.dependency "libwebp"
+  
+  s.preserve_paths = "opencv2.framework"
 
   s.source_files  = "opencv2.framework/Versions/A/Headers/**/*{.h,.hpp}"
 
   s.public_header_files = "opencv2.framework/Versions/A/Headers/**/*{.h,.hpp}"
 
-  s.preserve_paths = "opencv2.framework"
-  
   s.vendored_frameworks = 'opencv2.framework'
 
   s.header_dir = "opencv2"
   
   s.header_mappings_dir = "opencv2.framework/Versions/A/Headers/"
-  
-  s.dependency "libwebp"
 
   s.libraries = "stdc++"
 
